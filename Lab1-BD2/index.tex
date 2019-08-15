@@ -1,0 +1,175 @@
+
+\documentclass[preprint,12pt]{elsarticle}
+
+\usepackage[spanish]{babel}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lineno}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{natbib}
+
+\begin{document}
+	
+	\begin{frontmatter}
+
+		\title{\huge SQL:1999 is the ISO/IEC 9075:1999 standard of 1999}
+		
+		\author{PANTY SIHUAYRO, JUAN CARLOS   (2014049452)}
+	
+		\address{Tacna, Perú}
+		
+		\begin{abstract}
+			%% Text of abstract
+SQL: 1999 (también llamado SQL 3) fue la cuarta revisión del lenguaje de consulta de la base de datos SQL . Introdujo una gran cantidad de nuevas características, muchas de las cuales requirieron aclaraciones en el SQL siguiente : 2003 . Mientras tanto, SQL: 1999 está en desuso.
+		\end{abstract}
+\end{frontmatter}
+%%
+	%% Start line numbering here if you want
+	%%
+	%\linenumbers
+	
+	%% main text
+	\section{Resumen}
+Los documentos estándar ISO se publicaron entre 1999 y 2002 en varias entregas, la primera de las cuales consta de varias partes. A diferencia de las ediciones anteriores, el nombre del estándar utilizaba dos puntos en lugar de un guión para mantener la coherencia con los nombres de otros estándares ISO . La primera entrega de SQL: 1999 tenía cinco partes:
+
+\begin{itemize}
+		\item SQL / Framework ISO / IEC 9075-1: 1999
+		\item SQL / Fundación ISO / IEC 9075-2: 1999 
+		\item SQL / CLI
+		\item SQL / PSM
+		\item SQL / Enlaces ISO / IEC 9075-5: 1999
+
+	\end{itemize}
+	%%
+	%% Start line numbering here if you want
+	%%
+	%\linenumbers
+	
+	%% main text
+\section{Introduccion}
+SQL es un lenguaje de dominio específico utilizado en programación, diseñado para administrar, y recuperar información de sistemas de gestión de bases de datos relacionales
+
+	%%
+	%% Start line numbering here if you want
+	%%
+	%\linenumbers
+	
+	%% main text
+
+
+
+	%%
+	%% Start line numbering here if you want
+	%%
+	%\linenumbers
+	
+	%% main text
+
+\section{Marco Teorico}
+	
+
+Posteriormente se publicaron tres partes más, también consideradas parte de SQL: 1999:
+
+\begin{itemize}
+
+\item Gestión SQL / MED de datos externos (SQL: 1999 parte 9) ISO / IEC 9075-9: 2001
+\item Enlaces de lenguaje de objetos SQL / OLB (SQL: 1999 parte 10) ISO / IEC 9075-10: 2000
+\item SQL JRT Rutinas y tipos de SQL utilizando el lenguaje de programación Java (SQL: 1999 parte 13) ISO / IEC 9075-13: 2002
+
+\end{itemize}
+
+
+
+\section{Analisis}
+
+Tipos de datos 
+
+\subsection{Tipos de datos booleanos }
+
+
+El estándar SQL: 1999 exige un tipo booleano,  pero muchos servidores SQL comerciales ( Base de datos Oracle , IBM DB2 ) no lo admiten como tipo de columna, tipo variable o no lo permiten en el conjunto de resultados. Microsoft SQL Server es uno de los pocos sistemas de bases de datos que admite correctamente los valores BOOLEAN utilizando su tipo de datos "BIT".  Cada campo de 1 a 8 bits ocupa un byte completo de espacio en el disco. MySQL interpreta "BOOLEAN" como sinónimo de TINYINT (entero con signo de 8 bits).  PostgreSQL proporciona un tipo booleano conforme estándar. 
+\subsection{Distintos tipos de poder definidos por el usuario }
+A veces llamados simplemente tipos distintos , se introdujeron como una característica opcional (S011) para permitir que los tipos atómicos existentes se extiendan con un significado distintivo para crear un nuevo tipo y, por lo tanto, permitir que el mecanismo de verificación de tipo detecte algunos errores lógicos, por ejemplo, agregar accidentalmente un edad a un salario. Por ejemplo:
+
+
+
+\begin{itemize}
+\item 
+create type age as integer FINAL;
+\item create type salary as integer FINAL;
+\end{itemize}
+
+crea dos tipos diferentes e incompatibles. Los tipos distintos de SQL utilizan la equivalencia de nombres, no la equivalencia estructural como typedefs en C. Todavía es posible realizar operaciones compatibles en (columnas o datos) de tipos distintos mediante el uso de un tipo explícito CAST.
+
+Pocos sistemas SQL son compatibles con estos. IBM DB2 es uno de los que los respalda. [4] La base de datos Oracle actualmente no los admite, por lo que recomienda emularlos por un tipo estructurado de un solo lugar . 
+
+\subsection{Tipos estructurados definidos por el usuario }
+
+Estos son la columna vertebral de la extensión de la base de datos relacional de objetos en SQL: 1999. Son análogos a las clases en lenguajes de programación orientados a objetos . SQL: 1999 permite solo una única herencia .
+\section{Conclusion}
+\begin{itemize}
+\item Conclusion  \\
+
+El motor de base de datos con el pasar de los años  va mejorando y haciendose mas robusta para cualquier necesidad de usuarios.
+
+
+
+\end{itemize}
+%%
+	
+	%%
+	%\linenumbers
+	
+	%% main text
+
+	
+	\newpage
+	
+	\bibliographystyle{apalike} 	%ESTILO
+	\bibliography{BIBLIOGRAFIA}	 
+\citep{B01}  
+\citep{B02}
+
+
+	
+%ARCHIVO .bib
+	
+	%% The Appendices part is started with the command \appendix;
+	%% appendix sections are then done as normal sections
+	%% \appendix
+	
+	%% \section{}
+	%% \label{}
+	
+	%% References
+	%%
+	%% Following citation commands can be used in the body text:
+	%% Usage of \cite is as follows:
+	%%   \cite{key}          ==>>  [#]
+	%%   \cite[chap. 2]{key} ==>>  [#, chap. 2]
+	%%   \citet{key}         ==>>  Author [#]
+	
+	%% References with bibTeX database:
+	
+	
+	%% Authors are advised to submit their bibtex database files. They are
+	%% requested to list a bibtex style file in the manuscript if they do
+	%% not want to use model1-num-names.bst.
+	
+	%% References without bibTeX database:
+	
+	% \begin{thebibliography}{00}
+	
+	%% \bibitem must have the following form:
+	%%   \bibitem{key}...
+	%%
+	
+	% \bibitem{}
+	
+	% \end{thebibliography}
+	
+\end{document}
+
+%%
+%% End of file `elsarticle-template-1-num.tex'.
